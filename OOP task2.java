@@ -53,7 +53,7 @@ class Manager extends Worker{
     }
     public void getWorkers(){
         for(Worker worker:workers){
-            System.out.println("Имя: "+worker.getName()+"\n"+"Возраст: "+worker.getAge()+"\n"+"Зарплата: "+worker.getSalary()+"\n");
+            System.out.println("Имя: "+worker.getName()+"\n"+"Возраст: "+worker.getAge()+"\n"+"Пол"+worker.getGender()+"\n"+"Зарплата: "+worker.getSalary()+"\n");
         }
     }
 }
