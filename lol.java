@@ -23,6 +23,7 @@ public class lol {
         CaesarEncrypter cs1 = new CaesarEncrypter();
         CaesarDecrypter cd2 = new CaesarDecrypter();
         FileChecker fc = new FileChecker();
+        BruteForceDecrypter bf = new BruteForceDecrypter();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите режим работы:");
         System.out.println("1. Шифрование");
@@ -60,6 +61,7 @@ public class lol {
                     String decryptedContent = cd2.decrypt(content1, key1);
                     writeFile("C:\\Users\\student\\IdeaProjects\\ppppp\\src\\ru\\ithub\\javatrainj\\decrypted.txt", decryptedContent);
                     System.out.println("Текст расшифрован и сохранен в decrypted.txt.");
+                    bf.bruteForceDecrypt("tuv");
                     break;
                 default:
                     System.out.println("Ошибка: неверный режим.");
