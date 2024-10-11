@@ -2,8 +2,8 @@ package ru.ithub.javatrainj;
 
 
 public class CaesarDecrypter {
-    public static String decrypt(String text, int key) {
-        CaesarEncrypter сe = new CaesarEncrypter();
-        return сe.encrypt(text, 26 - key);
+     public static String decrypt(String text, int key) {
+        TextShifter ts = new TextShifter();
+        return ts.shiftText(text, -key);
     }
 }
