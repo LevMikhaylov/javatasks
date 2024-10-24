@@ -16,6 +16,8 @@ public class Main {
 
             System.out.println("Файл успешно преобразован и записан в " + outputFilePath);
 
+        } catch (FileNotFoundException e1) {
+            System.out.println(e1.getMessage());
         } catch (IOException e) {
             System.err.println("Ошибка при работе с файлами: " + e.getMessage());
         }
