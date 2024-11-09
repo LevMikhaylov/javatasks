@@ -9,7 +9,7 @@ public class Main {
         l.add("dfdf");
         l.add("sdqewqe2");
         l.add("sdqwee3e3da");
-        List<String>lens=l.stream().filter(s->s.length()>5).toList();
-        lens.forEach(System.out::println);
+        List<String>words=l.stream().filter(s->s.length()>5).toList();
+        words.forEach(System.out::println);
     }
 }
